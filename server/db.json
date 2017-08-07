@@ -1,0 +1,86 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Avetik Harutyunyan",
+      "email": "avetik.harutyunyan1@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "Gegham Samvelyan",
+      "email": "vamosgs@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Johnson Doe",
+      "email": "jdoe@gmail.com"
+    },
+    {
+      "name": "James Bond",
+      "email": "jb2000@gmail.com",
+      "id": "BkPxwSMwb"
+    }
+  ],
+  "subreddits": [
+    {
+      "id": "1",
+      "title": "First Subreddit",
+      "posts": [
+        {
+          "id": "1",
+          "title": "First post",
+          "description": "Description for the first post",
+          "authorId": "1"
+        },
+        {
+          "id": "2",
+          "title": "Second post",
+          "description": "Description for the second post",
+          "authorId": "2"
+        },
+        {
+          "id": "3",
+          "title": "Third post",
+          "description": "Description for the third post",
+          "authorId": "3"
+        },
+        {
+          "id": "4",
+          "title": "Forth post",
+          "description": "Description for the Forth post",
+          "authorId": "1"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Second Subreddit",
+      "posts": [
+        {
+          "id": "1",
+          "title": "First post |2|",
+          "description": "Description for the first post",
+          "authorId": "1"
+        },
+        {
+          "id": "2",
+          "title": "Second post |2|",
+          "description": "Description for the second post",
+          "authorId": "2"
+        },
+        {
+          "id": "3",
+          "title": "Third post |2|",
+          "description": "Description for the third post",
+          "authorId": "3"
+        },
+        {
+          "id": "4",
+          "title": "Forth post |2|",
+          "description": "Description for the Forth post",
+          "authorId": "1"
+        }
+      ]
+    }
+  ]
+}
