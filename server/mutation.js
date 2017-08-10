@@ -1,50 +1,13 @@
 const {
-	GraphQLObjectType,
-	GraphQLString,
-	GraphQLNonNull
+	GraphQLObjectType
 } = require('graphql');
-const { UserType } = require('./types');
+const mutations = require('./mutations');
 
-const mutation = new GraphQLObjectType({
+module.exports = new GraphQLObjectType({
 	name: 'Mutation',
 	fields: {
-		addUser: {
-			type: UserType,
-			args: {
-				name: {type: new GraphQLNonNull(GraphQLString)},
-				email: {type: new GraphQLNonNull(GraphQLString)}
-			},
-			resolve(root, args) {
-				return axios.post('http://localhost:3000/users', {
-					name: args.name,
-					email: args.email
-				})
-				.then(res => res.data)
-			}
-		},
-		updateUser: {
-			type: UserType,
-			args: {
-				id: {type: new GraphQLNonNull(GraphQLString)},
-				name: {type: GraphQLString},
-				email: {type: GraphQLString}
-			},
-			resolve(root, args) {
-				return axios.put(`http://localhost:3000/users/${args.id}`, args)
-					.then(res => res.data)
-			}
-		},
-		deleteUser: {
-			type: UserType,
-			args: {
-				id: {type: new GraphQLNonNull(GraphQLString)}
-			},
-			resolve(root, args) {
-				return axios.delete(`http://localhost:3000/users/${args.id}`)
-					.then(res => res.data)
-			}
-		}
+		addUser: mutations.addUser,
+		updateUser: mutations.updateUser,
+		deleteUser: mutations.deleteUser
 	}
-})
-
-module.exports = mutation;
+});
