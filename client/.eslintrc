@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "linebreak-style": 0,
+    "react/require-default-props": 0,
+    "no-alert": 0,
+    "no-underscore-dangle": 0,
+    "no-console": ["error", { "allow": ["log"] }]
+  },
+  "globals": {
+    "document": true,
+    "alert": true,
+    "window": true
+  }
+}

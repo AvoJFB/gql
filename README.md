@@ -15,11 +15,19 @@ npm install
 ```bash
 npm run db
 ```
-Database will be running on 3000 port
+Database will be running on 3000 port.
 
 ### Run server
 
 ```bash
-npm run start
+npm run server
 ```
-Server will be running on 4000 port
+Server will be running on 4000 port.
+
+### Run client
+
+```bash
+npm run client
+```
+
+Client will be running on 8080 port.
