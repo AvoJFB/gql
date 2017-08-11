@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node_modules/.bin/webpack --config ./client/webpack.config.js",
     "client": "node_modules/.bin/webpack-dev-server --config ./client/webpack.config.js",
-    "server": "nodemon ./server/server.js",
+    "server": "node_modules/.bin/nodemon ./server/server.js",
     "db": "./node_modules/.bin/json-server --watch server/db.json"
   },
   "author": "",
