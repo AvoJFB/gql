@@ -1,0 +1,32 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.posts-container {
+    margin-top: 40px;
+}
+
+.post-title {
+    color: #00BCD4;
+    text-decoration: none;
+    transition: color .1s ease-in-out;
+}
+
+.post-title:hover {
+    color: #0097A7;
+}
+
+.post-author {
+    color: #424242;
+}
