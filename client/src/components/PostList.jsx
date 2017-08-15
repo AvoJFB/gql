@@ -3,9 +3,16 @@ import Post from './Post';
 
 const PostList = props => (
   <div className="container posts-container">
-    {props.posts.map(post => (
-      <Post key={post.id} id={post.id} title={post.title} author={post.author} />
-    ))}
+    {props.posts && props.posts.length > 0 ? props.posts.map(post => (
+      <Post
+        subreddit={props.match.params.subreddit}
+        key={post.id}
+        id={post.id}
+        title={post.title}
+        author={post.author}
+      />
+    )) : <h2>No Posts for this subreddit.</h2>
+    }
   </div>
 );
 

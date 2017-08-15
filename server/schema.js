@@ -1,27 +1,22 @@
 const {
-	GraphQLObjectType,
-	GraphQLString,
-	GraphQLSchema,
-	GraphQLList
+  GraphQLObjectType,
+  GraphQLSchema,
 } = require('graphql');
 const queries = require('./queries');
-const axios = require('axios');
-
 const mutation = require('./mutation');
-const types = require('./types');
 
 const RootQuery = new GraphQLObjectType({
-	name: 'Root',
-	fields: {
+  name: 'Root',
+  fields: {
     user: queries.user,
-		users: queries.users,
+    users: queries.users,
     subreddit: queries.subreddit,
-		subreddits: queries.subreddits
-	}
+    subreddits: queries.subreddits,
+  },
 });
 
 
 module.exports = new GraphQLSchema({
-	query: RootQuery,
-	mutation
+  query: RootQuery,
+  mutation,
 });
